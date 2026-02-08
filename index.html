@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"> 
+
     <title>Hello world !</title>
-</head>
+
+</head> 
 <body>
     <header>
-        <nav>
+        <nav class="navigation">
             <img src="images/Gomycode-SN.svg" width="100px" height="60" alt="logo">
 
             <ul>
@@ -16,12 +20,14 @@
                 <li><a href="#a propos">a propos</a></li>
                 <li><a href="#nos service">nos service</a></li>
                 <li><a href="#contact">contact</a></li> 
-
+  
             </ul>
         </nav>
     </header>
     <main>
         <section id="acceil">
+            <div class="inner-acceil"></div>
+            <div class="content-acceil"></div>
             <h1>votre premier pas sur le web</h1>
 
             <audio controls>
@@ -34,24 +40,24 @@
             <button ><a href="">prendre rdv</a></button>
 
         </section>
-        <section id="a propos">
+        <section id="a propos" class="a propos" >
             <div>
-                <div>
-                    <div>
-                        <img src="" alt="">
+                <div class="image-a propos">
+                    <img src="" alt="">
+                    <div class="content-a propos">
+                        <p>---------</p>
                     </div>
                 </div>
-                <h2>     </h2>
-                <p>     </p>
+               <img src="Blue Minimalist Creative Name Logo.jpg" width="500" height="250" alt="images simple">
             </div>
         </section>
-        <section id="nos services">
+        <section id="nos services" class="nos services">
         <div>
             <div>
-                <div>
+                
                      <img src="" alt="">
-                     <p> </p>
-                </div>
+                     <p>------</p>
+                
                 <video width="600" height="360" controls>
                     <source src="Revision OBS tudio/2025-09-16 14-26-14.mp4" type="video/mp4">
                     <source src="Revision OBS tudio/2025-09-16 14-26-14.webm" type="video/webm">
@@ -67,16 +73,17 @@
                 <h2>nous contacter</h2>
                 <input type="nom" placeholder="votre nom" id="nom" required><br>
                 <br>
-                <input type="email" placeholder="votre email" id="email" required><br>
+                <input type="email" placeholde  r="votre email" id="email" required><br>
                 <br>
                 <input type="numero" placeholder="votre numero" id="numero" required><br>
                 <br>
                 <input type="number" placeholder="your number" id="number" required><br>
                 <br>
-                <select>
-                    <option value=" choisir votre pays">ici</option>
-                    <option value="choisir votre pays">labas</option>
-                    <option value="choisir votre pays">loin</option>
+                <label for="pays">choisissez votre pays</label><br>
+                <select id="pays" name="pays"><br>
+                    <option value="ici">ici</option>
+                    <option value="labas">labas</option>
+                    <option value="loin">loin </option>
                 </select><br>
                 <br>
 
@@ -91,9 +98,9 @@
     <br>
     <br>
     <footer>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" width="" height="" alt=""></a>
+        <a href=""><img src="" width="" height="" alt=""></a>
+        <a href=""><img src="" width="" height="" alt=""></a>
         <button><a href="">clic ici </a></button>
     </footer>
 </body>
